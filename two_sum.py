@@ -1,16 +1,12 @@
 def two_sum(numbers, target):
     seen = {}
-
-    for i, number in enumerate(numbers):
-        needed = target - number
-
-        if needed in seen:
-            return [seen[needed], i]
-
-        seen[number] = i
-
+    for i, num in enumerate(numbers):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num] = i
     return []
 
 
-if __name__ == "__main__":
-    print(two_sum([2, 7, 11, 15], 9))
+# Test run
+print(two_sum([2, 7, 11, 15], 9))  # Output: [0, 1]
