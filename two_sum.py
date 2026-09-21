@@ -1,9 +1,9 @@
-def two_sum(numbers, target):
+def two_sum(numbers: list[int], target: int) -> list[int]:
     seen = {}
     for i, num in enumerate(numbers):
-        complement = target - num
-        if complement in seen:
-            return [seen[complement], i]
+        diff = target - num
+        if diff in seen:
+            return [seen[diff], i]
         seen[num] = i
     return []
 
