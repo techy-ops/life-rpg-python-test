@@ -9,4 +9,4 @@ def two_sum(numbers: list[int], target: int) -> list[int]:
 
 
 # Test run
-print(two_sum([2, 7, 11, 15], 9))  # Output: [0, 1]
+print(two_sum([2, 7, 11, 15], 9))  
