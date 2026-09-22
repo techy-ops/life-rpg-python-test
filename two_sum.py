@@ -8,5 +8,5 @@ def two_sum(numbers: list[int], target: int) -> list[int]:
     return []
 
 
-# Test run
+
 print(two_sum([2, 7, 11, 15], 9))  
