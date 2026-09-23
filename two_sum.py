@@ -10,3 +10,4 @@ def two_sum(numbers: list[int], target: int) -> list[int]:
 
 
 print(two_sum([2, 7, 11, 15], 9))  
+#output ([0,1])
